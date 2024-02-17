@@ -14,6 +14,17 @@ $secondary-font: "Arial", sans-serif;
     color: #ff0000;
 }
 
+@mixin new_button_style {
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    padding: 1.5rem 4rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 
 body {
     font-family: $secondary-font;
