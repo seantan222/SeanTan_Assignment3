@@ -9,7 +9,7 @@ $secondary-font: "Arial", sans-serif;
 
 //MIXINS
 @mixin important-text {
-    font-size: 3cap;
+    font-size: 50px;
     font-family: "Poppins", sans-serif;
     color: #ff0000;
 }
@@ -106,9 +106,9 @@ article {
     margin-top: 0;
 }
 .post-title a {
+    @include important-text;
     color: #324360;
     text-transform: uppercase;
-    font-size: 26px;
     font-weight: 900;
     margin-top: 15px;
     margin-bottom: 15px;
