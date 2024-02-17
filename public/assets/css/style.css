@@ -1,8 +1,8 @@
 /* This is the original example. You can take all css styles from here. */
 body {
-  font-family: Quando;
-  font-size: 15px;
-  color: #787878;
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  color: #007bff;
 }
 
 img {
@@ -34,7 +34,7 @@ h5,
 h6 {
   margin-top: 25px;
   margin-bottom: 20px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: 400;
   line-height: 1.3em;
   word-wrap: break-word;
@@ -111,7 +111,7 @@ article {
 }
 
 .post-title a:hover {
-  color: #35c4ce;
+  color: #ff0000;
 }
 
 /* footer */

@@ -3,18 +3,22 @@
 //VARIABLES
 $primary-color: #007bff;
 $secondary-color: #ff0000;
-$font-size: 16px;
+$font-size: 30px;
 $primary-font: "Helvetica", sans-serif;
 $secondary-font: "Arial", sans-serif;
 
 //MIXINS
-
+@mixin important-text {
+    font-size: 3cap;
+    font-family: "Poppins", sans-serif;
+    color: #ff0000;
+}
 
 
 body {
-    font-family: Quando;
-    font-size: 15px;
-    color: #787878;
+    font-family: $secondary-font;
+    font-size: $font-size;
+    color: $primary-color;
 }
 img {
     max-width: 100%;
@@ -41,7 +45,7 @@ h5,
 h6 {
     margin-top: 25px;
     margin-bottom: 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $primary-font;
     font-weight: 400;
     line-height: 1.3em;
     word-wrap: break-word;
@@ -112,7 +116,7 @@ article {
     transition: all .3s ease;
 }
 .post-title a:hover {
-    color: #35c4ce;
+    color: $secondary-color;
 }
 
 
