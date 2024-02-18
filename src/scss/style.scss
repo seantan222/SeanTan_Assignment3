@@ -32,7 +32,7 @@ $secondary-font: "Arial", sans-serif;
 //
 
 body {
-    @include animate(1s, ease-in-out);
+    @include animate(2.5s, ease-in-out);
     font-family: $secondary-font;
     font-size: $font-size;
     color: $primary-color;
