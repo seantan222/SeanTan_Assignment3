@@ -1,8 +1,19 @@
 /* This is the original example. You can take all css styles from here. */
 body {
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
   font-family: "Arial", sans-serif;
   font-size: 30px;
   color: #007bff;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 img {
