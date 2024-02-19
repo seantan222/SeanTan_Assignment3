@@ -1,13 +1,13 @@
 /* This is the original example. You can take all css styles from here. */
 
-//VARIABLES
+// Variables
 $primary-color: #007bff;
 $secondary-color: #ff0000;
 $font-size: 30px;
 $primary-font: "Helvetica", sans-serif;
 $secondary-font: "Arial", sans-serif;
 
-//MIXINS
+// Mixins
 @mixin important-text {
     font-size: 50px;
     font-family: "Poppins", sans-serif;
@@ -112,70 +112,82 @@ header {
 }
 
 /* posts */
+// Nesting 2
 article {
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
+  
+    .image-part {
+      margin-bottom: 10px;
+    }
+  
+    .post-title {
+        margin-top: 0;
+  
+        a {
+            @include important-text;
+            color: #324360;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            line-height: 1.3em;
+            transition: all .3s ease;
+  
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
 }
-.image-part {
-    margin-bottom: 10px;
-}
-
-.post-title {
-    margin-top: 0;
-}
-.post-title a {
-    @include important-text;
-    color: #324360;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    line-height: 1.3em;
-    transition: all .3s ease;
-}
-.post-title a:hover {
-    color: $secondary-color;
-}
-
-
 
 /* footer */
+// Nesting 3
 footer {
     padding: 30px 0;
     text-align: center;
     background: #eaf2ff;
     color: #989898;
-}
-#footer a {
-    color: #989898;
-}
-#footer a:hover {
-    color: #111111;
-}
-.footer-logo {
-    width: 200px;
-    margin: 20px auto;
-    text-align: center;
-    vertical-align: middle;
-}
-.footer-social-links {
-    padding: 20px 0;
-    line-height: 2em;
-}
-.footer-social-links a {
-    margin: 0 10px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.footer-social-links a span {
-    display: none;
-}
-#footer-copyright {
-    padding: 20px 0;
-    font-size: 12px;
-    color: #989898;
+  
+    #footer {
+        a {
+            color: #989898;
+  
+            &:hover {
+                color: #111111;
+            }
+        }
+    }
+  
+    .footer-logo {
+      width: 200px;
+      margin: 20px auto;
+      text-align: center;
+      vertical-align: middle;
+    }
+  
+    .footer-social-links {
+        padding: 20px 0;
+        line-height: 2em;
+  
+        a {
+            margin: 0 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+  
+            span {
+                display: none;
+            }
+        }
+    }
+  
+    #footer-copyright {
+      padding: 20px 0;
+      font-size: 12px;
+      color: #989898;
+    }
 }
 
 
@@ -221,6 +233,7 @@ footer {
     .current-menu-item a {
         border-bottom: 2px solid #324360;
     }
+    
     /* sub nav */
     header nav ul ul {
         visibility: hidden;

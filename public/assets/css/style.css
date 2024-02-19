@@ -100,16 +100,13 @@ article {
   display: flex;
   flex-wrap: wrap;
 }
-
-.image-part {
+article .image-part {
   margin-bottom: 10px;
 }
-
-.post-title {
+article .post-title {
   margin-top: 0;
 }
-
-.post-title a {
+article .post-title a {
   font-size: 50px;
   font-family: "Poppins", sans-serif;
   color: #ff0000;
@@ -121,8 +118,7 @@ article {
   line-height: 1.3em;
   transition: all 0.3s ease;
 }
-
-.post-title a:hover {
+article .post-title a:hover {
   color: #ff0000;
 }
 
@@ -133,39 +129,32 @@ footer {
   background: #eaf2ff;
   color: #989898;
 }
-
-#footer a {
+footer #footer a {
   color: #989898;
 }
-
-#footer a:hover {
+footer #footer a:hover {
   color: #111111;
 }
-
-.footer-logo {
+footer .footer-logo {
   width: 200px;
   margin: 20px auto;
   text-align: center;
   vertical-align: middle;
 }
-
-.footer-social-links {
+footer .footer-social-links {
   padding: 20px 0;
   line-height: 2em;
 }
-
-.footer-social-links a {
+footer .footer-social-links a {
   margin: 0 10px;
   font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
-.footer-social-links a span {
+footer .footer-social-links a span {
   display: none;
 }
-
-#footer-copyright {
+footer #footer-copyright {
   padding: 20px 0;
   font-size: 12px;
   color: #989898;
