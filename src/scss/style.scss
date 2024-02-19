@@ -95,19 +95,21 @@ h6 {
 
 
 /* header and main nav */
+// Nesting 1
 header {
     font-family: 'Josefin Sans', sans-serif;
-}
-header nav ul {
-    display: none;
+  
+    nav {
+      ul {
+        display: none;
+      }
+    }
 }
 
 .top-logo {
     width: 200px;
     margin: 20px auto 40px;
 }
-
-
 
 /* posts */
 article {
