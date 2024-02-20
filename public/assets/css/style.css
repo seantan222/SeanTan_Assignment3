@@ -164,7 +164,7 @@ footer #footer-copyright {
   .container {
     width: 90%;
   }
-  header nav {
+  .container header nav {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -172,15 +172,15 @@ footer #footer-copyright {
     align-items: center;
     height: 60px;
   }
-  header nav ul {
+  .container header nav ul {
     display: flex;
   }
-  header nav li {
+  .container header nav ul li {
     margin: 0 15px;
     position: relative;
     line-height: 24px;
   }
-  header nav a {
+  .container header nav ul li a {
     font-family: "Josefin Sans", sans-serif;
     color: #324360;
     letter-spacing: 1px;
@@ -188,17 +188,17 @@ footer #footer-copyright {
     font-size: 12px;
     font-weight: 900;
   }
-  header nav a:hover {
+  .container header nav ul li a:hover {
     color: #35c4ce;
   }
-  header nav li.menu-item-has-children > a::after {
+  .container header nav ul li.menu-item-has-children > a::after {
     margin-left: 7px;
     font-family: "FontAwesome";
     font-size: 13px;
     color: #324360;
     content: "\f078";
   }
-  .current-menu-item a {
+  .container header nav ul li.current-menu-item a {
     border-bottom: 2px solid #324360;
   }
   /* sub nav */
